@@ -1849,13 +1849,6 @@ packages:
     version: 3.0.11
     engines: {node: '>=10'}
     dependencies:
-      q: registry.npmmirror.com/q/1.5.1
-    dev: true
-
-  registry.npmmirror.com/conventional-changelog-jshint/2.0.9:
-    resolution: {integrity: sha512-wMLdaIzq6TNnMHMy31hql02OEQ8nCQfExw1SE0hYL5KvU+JCTuPaDO+7JiogGT2gJAxiUGATdtYYfh+nT+6riA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/conventional-changelog-jshint/-/conventional-changelog-jshint-2.0.9.tgz}
-    name: conventional-changelog-jshint
-    version: 2.0.9
     engines: {node: '>=10'}
     dependencies:
       compare-func: registry.npmmirror.com/compare-func/2.0.0
