@@ -14,10 +14,11 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
+      - run: npm install
       - run: npm ci # or yarn install
       - uses: sibiraj-s/action-eslint@v2
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }} # Optional
+          github-token: ${{ secrets.ESLINT_TOKEN }} # Optional
           eslint-args: '--ignore-path=.gitignore --quiet'
           extensions: 'js,jsx,ts,tsx,pug'
           annotations: true
