@@ -1,7 +1,6 @@
-import "./index.css"
-import $ from "jquery";
+import './index.css'
+import $ from 'jquery'
 
-$(document).ready(function() {
-  console.log("Hello World!");
-});
-
+$(document).ready(function () {
+  console.log('Hello World!')
+})
