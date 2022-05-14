@@ -65,4 +65,3 @@ module.exports = {
   // 限制subject长度
   subjectLimit: 100
 }
-
