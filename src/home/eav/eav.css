@@ -17,7 +17,7 @@
     margin-left:100px;
     cursor: pointer;
 }
-.eav-container{
+.eav-name{
     width:250px;
     height:100px;
     padding:50px 20px;
@@ -26,28 +26,25 @@
     font-size:50px;
     cursor: pointer;
 } 
-.eav-box {
+.eav-container {
     width:60%;
-    float:left;
+    float:right;
     height:100px;
     margin:50px 0;
-    padding:0 80px;
+    padding:0 50px 0 0;
 }
-ul {
+.eav-list {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
     height:100px;
-    line-height:10px;
+    line-height:5px;
 }
-ul li {
+.eav-list li {
     list-style: none;
     display: inline-block;
 }
-a {
-    text-decoration: none;
 
-}
 .eav-content {
     color:#656464;
     font-size:25px;
@@ -55,9 +52,44 @@ a {
     height:30px;
     padding:35px 10px;
     cursor: pointer;
+    position:relative;
 }
-.eav-content:hover {
+.eav-content sapn:hover {
     color:#00ace8;
     font-size:30px;
     font-weight:bold;
+}
+.eav-box {
+    width:180px;
+    height:250px;
+    background-color: #b4e1ee;
+    border-radius: 15px;
+    position: absolute;
+    left:-30px;
+    top:135px;
+    align-type: center;
+    display:none;
+}
+.eav-box li {
+    font-size:25px;
+    color:#656464;
+    cursor: pointer;
+    height:28px;
+    padding:15px;
+    line-height:28px;
+    border-bottom: 1px solid #656464;
+}
+.eav-box li:hover {
+    color:#00ace8;
+    cursor: pointer;
+    font-size:30px;
+    font-weight:bold;
+}
+.drop {
+
+}
+.drop:after {
+    content: "";
+    display: block;
+    
 }
