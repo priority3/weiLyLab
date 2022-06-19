@@ -1,5 +1,4 @@
-import $ from "jquery";
-
+import $ from 'jquery'
 $(document).ready(function () {
-    console.log("Hello World!");
-});
+  console.log('Hello World!')
+})

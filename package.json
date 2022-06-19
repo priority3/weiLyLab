@@ -6,7 +6,9 @@
     "dev": "vite",
     "build": "vite build --emptyOutDir",
     "preview": "vite preview",
-    "commit": "git add . && git-cz"
+    "commit": "git add . && git-cz",
+    "eslint-fix": "eslint src/**/*.* --fix",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.4",
@@ -14,7 +16,19 @@
     "commitizen": "^4.2.4",
     "conventional-changelog-cli": "^2.2.2",
     "cz-customizable": "^6.3.0",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-pug": "^1.2.4",
+    "eslint-plugin-vue": "^8.7.1",
     "glob": "^8.0.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^12.4.1",
+    "prettier": "^2.6.2",
     "standard-version": "^9.3.2",
     "vite": "^2.9.0",
     "vite-plugin-pug": "^0.3.1"
@@ -33,5 +47,8 @@
     "commitizen": {
       "path": "node_modules/cz-customizable"
     }
+  },
+  "lint-staged": {
+    "*.{js,vue,ts,pug}": "eslint --fix"
   }
 }
