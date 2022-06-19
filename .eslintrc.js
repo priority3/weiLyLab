@@ -13,5 +13,8 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: ['pug'],
-  rules: {}
+  rules: {
+    // elsint 在html中会报jsx？ 先禁用掉
+    'vue/comment-directive': 0
+  }
 }

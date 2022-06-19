@@ -11,9 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: install pnpm
+        run: npm i pnpm@latest -g
       - name: Install Packages
         run: |
-          npm install
+          pnpm install
       - name: Run ESLint
         run: |
           npx eslint --ext .vue,.js src
