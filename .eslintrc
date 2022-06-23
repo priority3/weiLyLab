@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "plugin:vue/base",
+    "standard"
+  ],
+  "parser": "vue-eslint-parser", 
+  "parserOptions": {
+    "requireConfigFile": false,
+    "parser":"@babel/eslint-parser",
+    "babelOptions":{
+      "parserOpts":{
+        "plugins":["jsx"]
+      }
+    }
+  },
+  "plugins": ["pug"],
+  "rules": {
+    // elsint 在html中会报jsx？ 先禁用掉
+    "vue/comment-directive": 0
+  }
+}
