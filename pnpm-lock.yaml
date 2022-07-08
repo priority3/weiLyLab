@@ -26,6 +26,7 @@ specifiers:
   postcss-import: ^14.1.0
   prettier: ^2.6.2
   pug: ^3.0.2
+  sass: ^1.53.0
   standard-version: ^9.3.2
   tailwindcss: ^3.0.23
   vite: ^2.9.0
@@ -39,6 +40,7 @@ dependencies:
   postcss: 8.4.12
   postcss-import: 14.1.0_postcss@8.4.12
   pug: 3.0.2
+  sass: 1.53.0
   tailwindcss: 3.0.23_autoprefixer@10.4.4
   vue: 3.2.31
 
@@ -63,7 +65,7 @@ devDependencies:
   lint-staged: 12.4.1
   prettier: 2.6.2
   standard-version: 9.3.2
-  vite: 2.9.1
+  vite: 2.9.1_sass@1.53.0
   vite-plugin-pug: 0.3.1_3n5wuuvn7zmj2btzsjhwgc5fg4
 
 packages:
@@ -2678,6 +2680,10 @@ packages:
     engines: {node: '>= 4'}
     dev: true
 
+  /immutable/4.1.0:
+    resolution: {integrity: sha512-oNkuqVTA8jqG1Q6c+UglTOD1xhC1BtjKI7XkCXRkZHrN5m18/XsnUp8Q89GkQO/z+0WjonSvl0FLhDYftp46nQ==}
+    dev: false
+
   /import-fresh/3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
     engines: {node: '>=6'}
@@ -3952,6 +3958,16 @@ packages:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: true
 
+  /sass/1.53.0:
+    resolution: {integrity: sha512-zb/oMirbKhUgRQ0/GFz8TSAwRq2IlR29vOUJZOx0l8sV+CkHUfHa4u5nqrG+1VceZp7Jfj59SVW9ogdhTvJDcQ==}
+    engines: {node: '>=12.0.0'}
+    hasBin: true
+    dependencies:
+      chokidar: 3.5.3
+      immutable: 4.1.0
+      source-map-js: 1.0.2
+    dev: false
+
   /semver/5.7.1:
     resolution: {integrity: sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==}
     hasBin: true
@@ -4499,10 +4515,10 @@ packages:
     dependencies:
       picocolors: 1.0.0
       pug: 3.0.2
-      vite: 2.9.1
+      vite: 2.9.1_sass@1.53.0
     dev: true
 
-  /vite/2.9.1:
+  /vite/2.9.1_sass@1.53.0:
     resolution: {integrity: sha512-vSlsSdOYGcYEJfkQ/NeLXgnRv5zZfpAsdztkIrs7AZHV8RCMZQkwjo4DS5BnrYTqoWqLoUe1Cah4aVO4oNNqCQ==}
     engines: {node: '>=12.2.0'}
     hasBin: true
@@ -4522,6 +4538,7 @@ packages:
       postcss: 8.4.12
       resolve: 1.22.0
       rollup: 2.70.1
+      sass: 1.53.0
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
