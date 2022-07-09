@@ -23,15 +23,15 @@
     padding:50px 20px;
     float:left;
     line-height:100px;
-    font-size:40px;
+    font-size:50px;
     cursor: pointer;
 }
 .eav-container {
     width:60%;
     float:right;
     height:100px;
-    margin:40px 0;
-    padding:0 40px 0 0;
+    margin:50px 0;
+    padding:0 50px 0 0;
 }
 .eav-list {
     list-style-type: none;
@@ -47,16 +47,16 @@
 
 .eav-content {
     color:#656464;
-    font-size:20px;
-    width:40%;
+    font-size:25px;
+    width:20%;
     height:30px;
     padding:35px 10px;
     cursor: pointer;
     position:relative;
 }
-.eav-content span:hover {
+.eav-content sapn:hover {
     color:#00ace8;
-    font-size:25px;
+    font-size:30px;
     font-weight:bold;
 }
 .eav-box {
