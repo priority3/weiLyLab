@@ -6,10 +6,10 @@ import glob from 'glob'
 const options = { pretty: true, localImports: true } // FIXME: pug pretty is deprecated!
 const locals = {}
 
-export function excludePrivate (item) {
+export function excludePrivate(item) {
   return !path.basename(item).startsWith('_')
 }
-export function getRootDir (excludeFn = () => true) {
+export function getRootDir(excludeFn = () => true) {
   return glob
     .sync('src/**/*.html')
     .filter(excludeFn)
