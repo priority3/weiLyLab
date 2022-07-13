@@ -7,6 +7,14 @@ $('.drop').mouseenter(function () {
 $('.drop').mouseleave(function () {
   $(this).children('ul').stop(true, false).slideUp(400)
 })
+$('.eav-box').hover(
+  function () {
+    $(this).show()
+  },
+  function () {
+    $(this).slideUp(400)
+  }
+)
 // ID点击的动画
 $('.eav-name').click(function () {
   console.log('click') // 测试用

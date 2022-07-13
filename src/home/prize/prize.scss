@@ -1,0 +1,47 @@
+.prize-container {
+  width: 100%;
+  height: 900px;
+  position: relative;
+  top: -10px;
+  .prize-block {
+    background-color: #001b2d;
+    width: 50%;
+    float: left;
+    height: 500px;
+    .prize-topic {
+      font-size: 2.2rem;
+      color: #ffffff;
+      text-align: center;
+      margin: 30px 0;
+    }
+    .prize-content {
+      width: 80%;
+      height: 350px;
+      border: white 1px solid;
+      margin: 0 auto;
+      overflow: hidden;
+      text-align: center;
+      padding: 5px;
+      .prize-title {
+        color: #f8c7c7;
+        font-size: 2.5rem;
+        padding: 0.5rem;
+        width: 3rem;
+        border: white 1px solid;
+        border-radius: 10px;
+      }
+      p {
+        color: #ccd1d5;
+        font-size: 1.6rem;
+      }
+    }
+  }
+  .prize-line {
+    width: 100%;
+    height: 50px;
+    background-color: #8a9aa5;
+    margin: 0px;
+    position: relative;
+    clear: left;
+  }
+}
