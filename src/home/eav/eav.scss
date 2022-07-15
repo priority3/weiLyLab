@@ -1,6 +1,7 @@
-body {
-    font-size: 50px;
+html {
+  font-size: 50px;
 }
+
 .eav {
   height: 150px;
   width: 100%;
@@ -9,61 +10,71 @@ body {
   position: sticky;
   top: 0;
   z-index: 9999;
+
   .eav-display {
     width: 650px;
     display: flex;
     justify-content: space-between;
+
     .eav-logo {
-      width:130px;
-      height:130px;
-      padding:10px;
-      float:left;
-      margin-left:100px;
+      width: 130px;
+      height: 130px;
+      padding: 10px;
+      float: left;
+      margin-left: 100px;
       cursor: pointer;
     }
+
     .eav-name {
-      width:250px;
-      height:100px;
-      padding:25px 20px;
-      float:left;
-      line-height:100px;
-      font-size: 3.3srem;;
+      width: 250px;
+      height: 100px;
+      padding: 25px 20px;
+      float: left;
+      line-height: 100px;
+      font-size: 1rem;
+      ;
       cursor: pointer;
     }
   }
+
   .eav-container {
-    width:60%;
-    float:right;
-    height:100px;
-    margin:25px 0;
-    padding:0 25px 0 0;
+    width: 60%;
+    float: right;
+    height: 100px;
+    margin: 25px 0;
+    padding: 0 25px 0 0;
+
     .eav-list {
       list-style-type: none;
       display: flex;
       justify-content: space-between;
-      height:100px;
-      line-height:5px;
+      height: 100px;
+      line-height: 5px;
+
       .eav-content {
         list-style: none;
-        color:#656464;
-        font-size: 1.6rem;
+        color: #656464;
+        font-size: 0.6rem;
         width: 20%;
         height: 30px;
-        line-height: 1rem;
+        line-height: 0.2rem;
         cursor: pointer;
         position: relative;
         text-align: center;
+
         span {
-          &:hover{
-            color:#00ace8;
-            font-size: 1.6rem;
+          &:hover {
+            color: #00ace8;
+            font-size: 0.7rem;
             font-weight: bold;
             transition: all 0.3s;
+
             &::after {
               opacity: 1;
               transform: scale(1, 1);
             }
           }
+
           &::after {
             display: block;
             content: " ";
@@ -74,12 +85,13 @@ body {
             left: 20%;
             background: #00ace8;
             opacity: 0;
-            -webkit-transition: transform 0.4s ease-out,opacity 0.2s ease-out;
+            -webkit-transition: transform 0.4s ease-out, opacity 0.2s ease-out;
             transform-origin: 50% 0%;
             transform: scale(0.1, 1);
 
           }
         }
+
         .eav-box {
           list-style-type: none;
           display: none;
@@ -94,20 +106,22 @@ body {
           top: 78px;
           text-align: center;
           z-index: 9;
+
           li {
             list-style-type: none;
-            font-size: 25px;
-            color:#656464;
+            font-size: 0.5rem;
+            color: #656464;
             cursor: pointer;
             height: 28px;
             margin: 0 25px;
             padding: 15px 0;
             line-height: 28px;
             border-bottom: 1px solid #656464;
-            &:hover{
-              color:#00ace8;
+
+            &:hover {
+              color: #00ace8;
               cursor: pointer;
-              font-size: 30px;
+              font-size: 0.6rem;
               font-weight: bold;
               transition: all 0.3s;
               border-bottom: 1px solid #00ace8;
@@ -115,31 +129,36 @@ body {
           }
         }
       }
+
       .drop {
         &::after {
           content: "        ";
           display: block;
-          height: 45px;
+          height: 65px;
           width: 230px;
+
           &:hover span {
-            color:#00ace8;
-            font-size: 30px;
+            color: #00ace8;
+            font-size: 0.6rem;
             font-weight: bold;
             transition: all 0.3s;
           }
         }
       }
+
       .keep {
-        &:hover{
-          color:#00ace8;
+        &:hover {
+          color: #00ace8;
           font-size: 30px;
           font-weight: bold;
           transition: all 0.3s;
+
           &::after {
             opacity: 1;
             transform: scale(1, 1);
           }
         }
+
         &::after {
           display: block;
           content: " ";
@@ -150,7 +169,7 @@ body {
           left: 20%;
           background: #00ace8;
           opacity: 0;
-          -webkit-transition: transform 0.4s ease-out,opacity 0.2s ease-out;
+          -webkit-transition: transform 0.4s ease-out, opacity 0.2s ease-out;
           transform-origin: 50% 0%;
           transform: scale(0.1, 1);
         }
@@ -158,20 +177,3 @@ body {
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
