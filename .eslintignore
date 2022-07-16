@@ -12,4 +12,8 @@ dist
 .local
 /bin
 Dockerfile
+package.json
+*.html
+*.css
+*.scss
 
