@@ -40,7 +40,8 @@ jobs:
         run: pnpm install
       # 运行代码扫描
       - name: Running Lint
-        run: pnpm lint
+        run: pnpm lint:eslint
+        run: pnpm lint:stylelint
       # 运行自动化测试
       # - name: Running Test
         # 通过前面章节定义的命令行执行自动化测试
