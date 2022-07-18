@@ -7,6 +7,7 @@
 .gif-black {
   mix-blend-mode: screen;
 }
+
 .gif-white {
   mix-blend-mode: multiply;
 }
@@ -41,11 +42,7 @@
 }
 
 .animation-slide-left {
-<<<<<<< HEAD
-    animation-name: slide-left 
-=======
   animation-name: slide-left;
->>>>>>> pri-origin/develop
 }
 
 .animation-slide-right {
