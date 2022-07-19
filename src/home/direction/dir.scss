@@ -13,7 +13,7 @@
     text-align: center;
     padding: 50px 0;
     font-weight: bold;
-    color: #ffffff;
+    color: #fff;
     position: relative;
 
     span {
@@ -26,7 +26,7 @@
         top: 80px;
         height: 18px;
         width: 5.2rem;
-        background-color: #ffffff;
+        background-color: #fff;
       }
     }
   }
@@ -38,7 +38,6 @@
 
     .dir-block {
       width: 49%;
-
       height: 50%;
       float: left;
 
@@ -64,34 +63,48 @@
         .front-pic {
           width: 100%;
         }
+
+        img {
+          @keyframes move {
+            0% {
+              transform: scale(1);
+            }
+
+            100% {
+              transform: scale(1.15);
+            }
+          }
+
+          &:hover {
+            animation: move 0.1s linear forwards;
+          }
+        }
       }
 
       .dir-name {
         position: relative;
         left: 35%;
-        top: -0.5rem;
+        top: -0.1rem;
         width: 4rem;
         height: 1rem;
         font-size: 0.7rem;
         border: #f6f7f7 1px solid;
-        color: #ffffff;
+        color: #fff;
         text-align: center;
         border-radius: 18px;
-
       }
     }
-
   }
 
   .prize-topic {
     width: 20%;
     height: 80px;
-    margin: 50px auto 0 auto;
+    margin: 50px auto 0;
     font-size: 1.3rem;
     text-align: center;
     padding: 50px 0;
     font-weight: bold;
-    color: #ffffff;
+    color: #fff;
     position: relative;
 
     span {
@@ -104,7 +117,7 @@
         top: 80px;
         height: 18px;
         width: 5.2rem;
-        background-color: #ffffff;
+        background-color: #fff;
       }
     }
   }

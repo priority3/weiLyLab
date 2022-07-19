@@ -1,4 +1,14 @@
 .head-container {
+  @keyframes row-ani {
+    from {
+      transform: translate(0, -8px);
+    }
+
+    to {
+      transform: translate(0, 8px);
+    }
+  }
+
   width: 100%;
   position: relative;
 
@@ -14,20 +24,11 @@
     left: 47%;
     z-index: 10;
     bottom: 20px;
+    cursor: pointer;
   }
 
   .row-ani {
     z-index: 10;
     animation: row-ani 1.3s ease-in-out 2.7s infinite alternate;
-  }
-
-  @keyframes row-ani {
-    from {
-      transform: translate(0, -8px)
-    }
-
-    to {
-      transform: translate(0, 8px)
-    }
   }
 }
