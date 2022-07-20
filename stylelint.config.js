@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  plugins: ['stylelint-order'],
+  plugins: ['stylelint-order', 'stylelint-scss'],
   extends: ['stylelint-config-standard'],
   rules: {
     'function-no-unknown': null,
@@ -69,5 +69,5 @@ module.exports = {
       { severity: 'warning' }
     ]
   },
-  ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.tsx', '**/*.ts', '**/*.scss']
+  ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.tsx', '**/*.ts']
 }
